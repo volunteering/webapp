@@ -16,7 +16,7 @@
   <meta name="description" content="">
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
@@ -34,17 +34,18 @@
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header>
+	<header>
 		<h1>Volunteering UK</h1>
 		<form action="add.html" method="get" accept-charset="utf-8">
 			<input class="textfield-location" type="text" placeholder="Angel, London, UK" size="200" />
 			<input type="submit" value="Find opportunities" />
 		</form>
-  </header>
-  <div role="main">
-	
-
+	</header>
+	<div role="main">
 		<ul id="opportunities">
+			<li>
+				<a href="add.html"><h3>+ Add a volunteering event</h3></a>
+			</li>
 			<li>
 				<img src="img/mystery_person.jpg" width="80" height="80" />
 				<dl>
@@ -52,7 +53,7 @@
 					<dd>Rob Finean</dd>
 
 					<dt>Event</dt>
-					<dd><a href="details.html">Paint a mural</a></dd>
+					<dd><a href="mural.html">Paint a mural</a></dd>
 					
 					<dt>Date</dt>
 					<dd>August 19th, 2012 @ 14.00</dd>
@@ -61,12 +62,12 @@
 					<dd>City University</dd>
 				</dl>
 				
-				<a href="details.html"><img src="img/chevron.png" width="50" height="50" alt="link to event" style="float:right; margin-top:-60px;" /></a>
+				<a href="mural.html"><img src="img/chevron.png" width="50" height="50" alt="More details" style="float:right; margin-top:-60px;" /></a>
                 
 				<span class="attendance">Going (10)</span>
-				<img src="img/fb-like-count.png" class="icons" width="20" height="20" />
+				<img src="img/fb-like-count.png" class="icons" width="20" height="20" alt="likes:" />
                 <span class="like-count">16</span>
-				<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comment" />
+				<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comments:" />
 				<span class="comment-count">3</span>
 				
 			</li>
@@ -77,7 +78,7 @@
 					<dd>Amanda Amandsen</dd>
 
 					<dt>Event</dt>
-					<dd><a href="details.html">Street cleanup</a></dd>
+					<dd><a href="mural.html">Street cleanup</a></dd>
 					
 					<dt>Date</dt>
 					<dd>July 27th, 2012 @ 10.00</dd>
@@ -86,12 +87,12 @@
 					<dd>Islington</dd>
 				</dl>
 				
-				<a href="details.html"><img src="img/chevron.png" width="50" height="50" alt="link to event" style="float:right; margin-top:-60px;" /></a>
+				<a href="mural.html"><img src="img/chevron.png" width="50" height="50" alt="More details" style="float:right; margin-top:-60px;" /></a>
                 
 				<span class="attendance">Going (34)</span>
-				<img src="img/fb-like-count.png" class="icons" width="20" height="20" />
+				<img src="img/fb-like-count.png" class="icons" width="20" height="20" alt="likes:" />
                 <span class="like-count">30</span>
-				<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comment" />
+				<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comments:" />
 				<span class="comment-count">24</span>
 				
 			</li>
@@ -102,7 +103,7 @@
 					<dd>Henry Carter</dd>
 
 					<dt>Event</dt>
-					<dd><a href="details.html">Clean canal rubbish</a></dd>
+					<dd><a href="mural.html">Clean canal rubbish</a></dd>
 					
 					<dt>Date</dt>
 					<dd>August 5th, 2012 @ 10.00</dd>
@@ -111,12 +112,12 @@
 					<dd>Camden</dd>
 				</dl>
 				
-				<a href="details.html"><img src="img/chevron.png" width="50" height="50" alt="link to event" style="float:right; margin-top:-60px;" /></a>
+				<a href="mural.html"><img src="img/chevron.png" width="50" height="50" alt="More details" style="float:right; margin-top:-60px;" /></a>
                 
 				<span class="attendance">Going (7)</span>
-				<img src="img/fb-like-count.png" class="icons" width="20" height="20" />
+				<img src="img/fb-like-count.png" class="icons" width="20" height="20" alt="likes:" />
                 <span class="like-count">5</span>
-				<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comment" />
+				<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comments:" />
 				<span class="comment-count">2</span>
 				
 			</li>
@@ -127,7 +128,7 @@
 					<dd>Anna Graham</dd>
 
 					<dt>Event</dt>
-					<dd><a href="details.html">Plant some trees</a></dd>
+					<dd><a href="mural.html">Plant some trees</a></dd>
 					
 					<dt>Date</dt>
 					<dd>August 1st, 2012 @ 14.00</dd>
@@ -136,24 +137,19 @@
 					<dd>Northampton Square</dd>
 				</dl>
 				
-                <a href="details.html"><img src="img/chevron.png" width="50" height="50" alt="link to event" style="float:right; margin-top:-60px;" /></a>
+                <a href="mural.html"><img src="img/chevron.png" width="50" height="50" alt="More details" style="float:right; margin-top:-60px;" /></a>
                 
 				<span class="attendance">Going (15)</span>
-				<img src="img/fb-like-count.png" class="icons" width="20" height="20" />
+				<img src="img/fb-like-count.png" class="icons" width="20" height="20" alt="likes:" />
                 <span class="like-count">21</span>
-				<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comment" />
+				<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comments:" />
 				<span class="comment-count">4</span>
-				
 			</li>
-			
 		</ul>
-	
-	
-
-  </div>
-  <footer>
-    <a href="add.html"><h3>+ Add a volunteering event</h3></a>
-  </footer>
+	</div>
+	<footer>
+  		More 2km away...
+	</footer>
 
 
   <!-- JavaScript at the bottom for fast page loading -->
