@@ -1,0 +1,22 @@
+
+header {/*position:fixed; */text-align:center; background:#576B95; color:#fff}
+header h1 {margin:0}
+header input {font-size:1.6em;}
+.textfield-location {width:420px; }
+
+footer {position:fixed; height:80px; bottom:0; width:100%; text-align:center; background:#EDEFF3; color:#000; }
+footer form {padding-top:20px;}
+footer form input {font-size:2em;}
+
+
+ul#opportunities {list-style:none; margin:0; padding:0;}
+ul#opportunities li {padding:10px 0; margin:0; border-bottom:1px solid #EDEFF3; }
+ul#opportunities li a {color:#576B95; text-decoration:none;}
+ul#opportunities li a:hover {text-decoration:underline; }
+ul#opportunities li img {width:80px; float:left; margin:0 20px 20px 0; }
+ul#opportunities li dt {display:none}
+
+.posted-when {}
+.like-count {}
+.comment-count {}
+.attendance {font-weight:bold}
