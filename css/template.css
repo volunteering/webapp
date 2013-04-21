@@ -1,12 +1,12 @@
 
-header {/*position:fixed; */text-align:center; background:#576B95; color:#fff; padding-bottom:10px; width:520px; }
+header {/*position:fixed; */ text-align:right; background:#576B95; color:#fff; padding-bottom:10px; width:520px; }
 header a{text-decoration:none; font-weight:bold;}
 header h1 {margin:0}
 header h1 {padding-top:5px}
 header input {font-size:1em;}
 .textfield-location {width:250px; }
 
-footer {position:fixed; height:80px; bottom:0; width:100%; text-align:center; background:#EDEFF3; color:#000; width:520px; }
+footer {/*position:fixed; height:80px; bottom:0;*/ width:100%; text-align:center; background:#EDEFF3; color:#000; width:520px; }
 footer form {padding-top:20px;}
 footer form input {font-size:1em; width:50px;}
 footer form input.textfield-what {width:250px; }
