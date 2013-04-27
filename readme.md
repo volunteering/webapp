@@ -1,55 +1,15 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+Volunteering
+============
 
-HTML5 Boilerplate is a professional front-end template that helps you build fast, robust, adaptable, and future-proof websites. Spend more time developing and less time reinventing the wheel.
+A mockup of a "[Farmville](http://farmville.com/) in real life" idea to encourage hyperlocal volunteering in local communities.
 
-This project is the product of many years of iterative development and combined community knowledge. It does not impose a specific development philosophy or framework, so you're free to architect your code in the way that you want.
+This was developed over two hackathons in London:
 
+* [TechMeetups HTML5 App hackathon](http://www.meetup.com/london-silicon-roundabout/events/59072812/) July 2012 by City Uni students and friends
+* [Urban Prototyping hackathon](http://uplondon.net/th_event/hackathon/) April 2013 at [Imperial College](http://imperialhub.org/xwiki/bin/view/Imperial+Hub/Volunteering+Opportunities/)
+  * [Presentation](https://docs.google.com/presentation/d/1u3fmOotVN-4SkLnQbPnhAAPBHclD-tHWHtCn1HUEjmU/pub?start=false&loop=false&delayms=5000)
+  * [2-page business case](https://docs.google.com/document/d/1QjoUJlIGHWEpaBh0ECT09W9JrpBfVXuNE-lzrTAmyAQ/pub)
 
-## Quick start
-
-Clone the git repo - `git clone git://github.com/h5bp/html5-boilerplate.git` - or [download it](https://github.com/h5bp/html5-boilerplate/zipball/master)
-
-
-## Features
-
-* HTML5 ready. Use the new elements with confidence.
-* Cross-browser compatible (Chrome, Opera, Safari, Firefox 3.6+, IE6+).
-* Designed with progressive enhancement in mind.
-* CSS normalizations and common bug fixes.
-* IE-specific classes for easier cross-browser control.
-* A default print stylesheet, performance optimized.
-* Mobile browser optimizations.
-* Protection against any stray `console.log` causing JavaScript errors in IE6/7.
-* The latest jQuery via CDN, with a local fallback.
-* A custom Modernizr build for feature detection.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
-
-
-## Contributing
-
-Anyone and everyone is welcome to [contribute](https://github.com/h5bp/html5-boilerplate/wiki/contribute). Hundreds of developers have helped make the HTML5 Boilerplate what it is today.
-
-
-## Project information
-
-* Source: http://github.com/h5bp/html5-boilerplate
-* Web: http://html5boilerplate.com
-* Docs: http://html5boilerplate.com/docs
-* Twitter: http://twitter.com/h5bp
-
-
-## License
-
-### Major components:
-
-* jQuery: MIT/GPL license
-* Modernizr: MIT/BSD license
-* Normalize.css: Public Domain
-
-### Everything else:
-
-The Unlicense (aka: public domain)
+It is going to showcase at [Digital Shoreditch](https://tickets.digitalshoreditch.com/2013/what-tech-city/) in May 2013 with the aim of recruiting volunteers to build a production version for soft-launch in [student communities](http://studenthubs.org/xwiki/bin/view/Main/Local+Hubs) later in 2013. We are also aware of these organisations that might get involved:
+* [Open Data Institute](http://www.theodi.org/) to advise on federated search
+* [Nesta](http://www.nesta.org.uk/areas_of_work/public_services_lab/giving_and_social_action/csa_innovationfund), who funded [#WeWillGather](http://www.wewillgather.co.uk/volunteer-projects#simpleContained2) and are [looking for a new owner](http://www.youthnet.org/2013/03/information-about-do-it-transfer-process/) for the [Do-it](http://www.do-it.org.uk/search/opportunities?unit=km&distance=2&location=South+Kensington) [database](http://www.youthnet.org/wp-content/uploads/2013/03/Overview-of-Do-it.pdf) and app. They have a hyper-local theme running.
