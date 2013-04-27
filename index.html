@@ -35,16 +35,19 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 	<header>
-		<form action="index.html" method="get" accept-charset="utf-8">
-			<input class="textfield-location" type="text" placeholder="EC2A 4BX" size="150" />
+		<form onsubmit="go();return false;" action="index.html" method="get" accept-charset="utf-8">
+			<input class="textfield-location" type="text" value="EC2A 4BX"
+				placeholder="Where do you want to volunteer?" size="150" />
 			<input type="submit" value=">" />
 		</form>
 	</header>
 	<div role="main">
-		<ul id="opportunities">
+		<ul class="opportunities">
 			<li style="text-align:center">
 				<a href="add.html"><h3>What are you inspired to do?</h3></a>
 			</li>
+		</ul>
+		<ul id="loading" class="opportunities">
 			<li>
 				<img src="img/tfl.jpg" width="80" height="80" />
 				<dl>
@@ -169,7 +172,36 @@
 				<span class="comment-count">0</span>
 			</li>
 		</ul>
+		<ul id="opplist" class="opportunities">
+		</ul>
 	</div>
+	<script id="opplisting" type="text/template">
+		<li>
+			<img src="{{image}}" width="80" height="80" />
+			<dl>
+				<dt>Proposer</dt>
+				<dd>{{name}}</dd>
+
+				<dt>What</dt>
+				<dd><a href="{{detailurl}}">{{title}}</a></dd>
+				
+				<dt>When</dt>
+				<dd>{{date}} {{time}}</dd>
+			
+				<dt>Where</dt>
+				<dd>{{location}}</dd>
+			</dl>
+			
+            <a href="{{detailurl}}"><img src="img/chevron.png" width="50" height="50" alt="More details" style="float:right; margin-top:-60px;" /></a>
+            
+			<span class="attendance">{{going}} going</span>
+			<img src="img/fb-like-count.png" class="icons" width="20" height="20" alt="likes:" />
+            <span class="like-count">{{likes}}</span>
+			<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comments:" />
+			<span class="comment-count">{{comments}}</span>
+		</li>
+	</script>
+
 	<footer>
   		More 2km away...
 	</footer>
@@ -180,6 +212,9 @@
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <!-- The import.io JS client lib (served from their CDN) -->
+  <script src="//d7xe6yl2ckrgs.cloudfront.net/js/2/importio.js"></script>
 
   <!-- scripts concatenated and minified via build script -->
   <script src="js/plugins.js"></script>

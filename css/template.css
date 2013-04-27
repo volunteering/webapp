@@ -1,24 +1,20 @@
 
-header {/*position:fixed; */ text-align:right; background:#576B95; color:#fff; padding-bottom:10px; width:520px; }
+header {text-align:right; background:#576B95; color:#fff; padding-bottom:10px;}
 header a{text-decoration:none; font-weight:bold;}
 header h1 {margin:0}
 header h1 {padding-top:5px}
 header input {font-size:1em;}
-.textfield-location {width:250px; }
+.textfield-location {width:20em;}
 
-footer {/*position:fixed; height:80px; bottom:0;*/ width:100%; text-align:center; background:#EDEFF3; color:#000; width:520px; }
-footer form {padding-top:20px;}
-footer form input {font-size:1em; width:50px;}
-footer form input.textfield-what {width:250px; }
+footer {text-align:center; background:#EDEFF3; color:#000;}
 footer h3 {background-color:#93c162; border:1px solid #47970e; padding:5px; padding-bottom:0; font-size:1.2em; display:inline-block; margin-top:20px;}
 
-#opportunities {width:520px;}
-ul#opportunities {list-style:none; margin:0; padding:0;}
-ul#opportunities li {padding:10px 0; margin:0; border-bottom:1px solid #EDEFF3; }
-ul#opportunities li a {color:#576B95; text-decoration:none;}
-ul#opportunities li a:hover {text-decoration:underline; }
-ul#opportunities li img {float:left; margin:5px 20px 20px 20px; }
-ul#opportunities li dt {display:none}
+ul.opportunities {list-style:none; margin:0; padding:0;}
+ul.opportunities li {padding:10px 0; margin:0; border-bottom:1px solid #EDEFF3; }
+ul.opportunities li a {color:#576B95; text-decoration:none;}
+ul.opportunities li a:hover {text-decoration:underline; }
+ul.opportunities li img {float:left; margin:5px 20px 20px 20px; }
+ul.opportunities li dt {display:none}
 
 ul#Details {list-style:none; margin:0; padding:0;}
 ul#Details li {padding:10px 0; margin:0; float:left;}
@@ -26,8 +22,8 @@ ul#Details li a {color:#576B95; text-decoration:none;}
 ul#Details li a:hover {text-decoration:underline; }
 #main img { }
 ul#Details dl {float: left;
-	width: 800px;
-	margin-left: 150px;
+/*	width: 800px;
+*/	margin-left: 150px;
 	padding: 0;}
 ul#Details li dt { font-weight:bold; 
 	clear: left;
@@ -39,8 +35,8 @@ ul#Details li dt { font-weight:bold;
 	border-top:1px solid #EDEFF3;
 	text-align:right;}
 ul#Details li dd { float: left;
-	width: 600px;
-	margin: 0;
+/*	width: 600px;
+*/	margin: 0;
 	padding: 5px;
 	border-top:1px solid #EDEFF3;}
 
@@ -49,7 +45,7 @@ ul#Details li dd { float: left;
 .comment-count {}
 .attendance {font-weight:bold}
 
-ul#opportunities li img.icons 
+ul.opportunities li img.icons 
 {
 	 float:none;
 	 margin:0;
@@ -66,8 +62,7 @@ padding-top:10px;}
 {clear:both; 
 background-color: #EDEFF3;
 padding:3px 10px 10px 10px;
-width:500px;
-height:500px;}
+}
 
 #comments h3
 {color:#576B95;}
@@ -76,7 +71,7 @@ height:500px;}
 {background:#fff;
 padding:10px;
 margin-bottom:30px;
-width:500px;}
+}
 
 .hint{
     display:none;
