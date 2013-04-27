@@ -47,160 +47,35 @@
 				<a href="add.html"><h3>What are you inspired to do?</h3></a>
 			</li>
 		</ul>
-		<ul id="loading" class="opportunities">
+		<script id="opplisting" type="text/template">
 			<li>
-				<img src="img/tfl.jpg" width="80" height="80" />
+				<img src="{{image}}" width="80" height="80" />
 				<dl>
-					<dt>Name</dt>
-					<dd>Transport for London</dd>
+					<dt>Proposer</dt>
+					<dd>{{name}}</dd>
 
-					<dt>Event</dt>
-					<dd><a href="mural.html">Paint a mural in Old St Roundabout subway</a></dd>
+					<dt>What</dt>
+					<dd><a href="{{detailurl}}">{{title}}</a></dd>
 					
-					<dt>Date</dt>
-					<dd>May</dd>
+					<dt>When</dt>
+					<dd>{{date}} {{time}}</dd>
 				
-					<dt>Location</dt>
-					<dd>Old Street Station</dd>
+					<dt>Where</dt>
+					<dd>{{location}}</dd>
 				</dl>
 				
-				<a href="mural.html"><img src="img/chevron.png" width="50" height="50" alt="More details" style="float:right; margin-top:-60px;" /></a>
-                
-				<span class="attendance">Going (1)</span>
+	            <a href="{{detailurl}}"><img src="img/chevron.png" width="50" height="50" alt="More details" style="float:right; margin-top:-60px;" /></a>
+	            
+				<span class="attendance">{{going}} going</span>
 				<img src="img/fb-like-count.png" class="icons" width="20" height="20" alt="likes:" />
-                <span class="like-count">16</span>
+	            <span class="like-count">{{likes}}</span>
 				<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comments:" />
-				<span class="comment-count">3</span>
-				
+				<span class="comment-count">{{comments}}</span>
 			</li>
-			<li>
-				<img src="img/amanda.jpg" width="80" height="80" />
-				<dl>
-					<dt>Name</dt>
-					<dd>Amanda Amandsen</dd>
-
-					<dt>Event</dt>
-					<dd><a href="mural.html">Playground cleanup</a></dd>
-					
-					<dt>Date</dt>
-					<dd>Saturday 12:00</dd>
-				
-					<dt>Location</dt>
-					<dd>Randor Street</dd>
-				</dl>
-				
-				<a href="mural.html"><img src="img/chevron.png" width="50" height="50" alt="More details" style="float:right; margin-top:-60px;" /></a>
-                
-				<span class="attendance">Going (4)</span>
-				<img src="img/fb-like-count.png" class="icons" width="20" height="20" alt="likes:" />
-                <span class="like-count">1</span>
-				<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comments:" />
-				<span class="comment-count">2</span>
-				
-			</li>
-			<li>
-				<img src="img/anna.jpg" width="80" height="80" />
-				<dl>
-					<dt>Name</dt>
-					<dd>Anna Graham</dd>
-
-					<dt>Event</dt>
-					<dd><a href="mural.html">Breakfast for homeless</a></dd>
-					
-					<dt>Date</dt>
-					<dd>Saturday 4 May 09:00</dd>
-				
-					<dt>Location</dt>
-					<dd>St Leonard church yard</dd>
-				</dl>
-				
-                <a href="mural.html"><img src="img/chevron.png" width="50" height="50" alt="More details" style="float:right; margin-top:-60px;" /></a>
-                
-				<span class="attendance">Going (2)</span>
-				<img src="img/fb-like-count.png" class="icons" width="20" height="20" alt="likes:" />
-                <span class="like-count">15</span>
-				<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comments:" />
-				<span class="comment-count">3</span>
-			</li>
-			<li>
-				<img src="img/chris.jpg" width="80" height="80" />
-				<dl>
-					<dt>Name</dt>
-					<dd>Henry Carter</dd>
-
-					<dt>Event</dt>
-					<dd><a href="mural.html">Clear canal rubbish</a></dd>
-					
-					<dt>Date</dt>
-					<dd>Saturday 4 May 14:00</dd>
-				
-					<dt>Location</dt>
-					<dd>City Road Basin</dd>
-				</dl>
-				
-				<a href="mural.html"><img src="img/chevron.png" width="50" height="50" alt="More details" style="float:right; margin-top:-60px;" /></a>
-                
-				<span class="attendance">Going (7)</span>
-				<img src="img/fb-like-count.png" class="icons" width="20" height="20" alt="likes:" />
-                <span class="like-count">2</span>
-				<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comments:" />
-				<span class="comment-count">1</span>
-				
-			</li>
-			<li>
-				<img src="img/campus_london.jpg" width="80" height="80" />
-				<dl>
-					<dt>Name</dt>
-					<dd>Campus London</dd>
-
-					<dt>Event</dt>
-					<dd><a href="mural.html">Learn to crete a website in Python</a></dd>
-					
-					<dt>Date</dt>
-					<dd>Friday 3 May 14:00</dd>
-				
-					<dt>Location</dt>
-					<dd>Google Campus</dd>
-				</dl>
-				
-                <a href="mural.html"><img src="img/chevron.png" width="50" height="50" alt="More details" style="float:right; margin-top:-60px;" /></a>
-                
-				<span class="attendance">Going (26)</span>
-				<img src="img/fb-like-count.png" class="icons" width="20" height="20" alt="likes:" />
-                <span class="like-count">0</span>
-				<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comments:" />
-				<span class="comment-count">0</span>
-			</li>
-		</ul>
+		</script>
 		<ul id="opplist" class="opportunities">
 		</ul>
 	</div>
-	<script id="opplisting" type="text/template">
-		<li>
-			<img src="{{image}}" width="80" height="80" />
-			<dl>
-				<dt>Proposer</dt>
-				<dd>{{name}}</dd>
-
-				<dt>What</dt>
-				<dd><a href="{{detailurl}}">{{title}}</a></dd>
-				
-				<dt>When</dt>
-				<dd>{{date}} {{time}}</dd>
-			
-				<dt>Where</dt>
-				<dd>{{location}}</dd>
-			</dl>
-			
-            <a href="{{detailurl}}"><img src="img/chevron.png" width="50" height="50" alt="More details" style="float:right; margin-top:-60px;" /></a>
-            
-			<span class="attendance">{{going}} going</span>
-			<img src="img/fb-like-count.png" class="icons" width="20" height="20" alt="likes:" />
-            <span class="like-count">{{likes}}</span>
-			<img src="img/fb-comment-count.png" class="icons" width="20" height="20" alt="comments:" />
-			<span class="comment-count">{{comments}}</span>
-		</li>
-	</script>
 
 	<footer>
   		More 2km away...
@@ -213,6 +88,9 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
+  <!-- The mustache JS client lib -->
+  <script src="js/mustache.js"></script>
+
   <!-- The import.io JS client lib (served from their CDN) -->
   <script src="//d7xe6yl2ckrgs.cloudfront.net/js/2/importio.js"></script>
 
@@ -223,11 +101,17 @@
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
        mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-40500326-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
 </body>
 </html>

@@ -17,10 +17,11 @@
 	}});
 
 	var template = $('#opplisting').html();
+	var list = $("#opplist");
 
 	function go() {
 		var location = "EC2A 4BX";
-
+		console.log("Searching for", location);
 		// Build the query object 
 		var query = {
 			"input": {
@@ -30,20 +31,24 @@
 			"mixGuids": ["a5ccc93f-fc44-4822-8554-50da02346fda"]
 		}
 
-		$("#opplist").empty();
 
 		// Do the query 
 		$("#loading").show();
-		importio.query(query).data(function(d) {
-			d.map(showData);
-		}).done(function() {
+		importio.query(query).data(showList).done(function() {
 			$("#loading").hide();
 		});
 	}
 
-	// Helper function to take an opportunity and render it for us 
-	function showData(item) {
-		var template = $('#opplisting').html();
-		var output = Mustache.render(template, item);
-		$("#opplist").append(output);
+	// Helper functions to take opportunities and render them for us
+	function showList(d) {
+//		console.log("list retrieved: ", d);
+		list.empty();
+		d.map(showListing);
 	}
+
+	function showListing(item) {
+		var output = Mustache.render(template, item);
+		list.append(output);
+	}
+
+	$.getJSON('js/placeholder.json', showList)
