@@ -3,9 +3,9 @@ header {text-align:right; background:#576B95; color:#fff; padding-bottom:10px;}
 header a{text-decoration:none; font-weight:bold;}
 header h1 {margin:0}
 header h1 {padding-top:5px}
-header input {font-size:1em;}
+/*header input {font-size:1em;}
 .textfield-location {width:20em;}
-
+*/
 footer {text-align:center; background:#EDEFF3; color:#000;}
 footer h3 {background-color:#93c162; border:1px solid #47970e; padding:5px; padding-bottom:0; font-size:1.2em; display:inline-block; margin-top:20px;}
 

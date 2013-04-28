@@ -35,10 +35,11 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 	<header>
-		<form onsubmit="go();return false;" action="index.html" method="get" accept-charset="utf-8">
-			<input class="textfield-location" type="text" value="EC2A 4BX"
-				placeholder="Where do you want to volunteer?" size="150" />
-			<input type="submit" value=">" />
+		<form onsubmit="return oppSearch();" action="index.html" method="get" accept-charset="utf-8">
+			<span id="loading" style="display:none">&hellip;</span>
+			<input name="location" type="search" value="EC2A 4BX" required id="searchloc"
+				placeholder="Where do you want to volunteer?" size="20" maxlength="99" />
+			<input type="submit" value="&gt;" />
 		</form>
 	</header>
 	<div role="main">
@@ -92,11 +93,11 @@
   <script src="js/mustache.js"></script>
 
   <!-- The import.io JS client lib (served from their CDN) -->
-  <script src="//d7xe6yl2ckrgs.cloudfront.net/js/2/importio.js"></script>
-
+<!--  <script src="//d7xe6yl2ckrgs.cloudfront.net/js/2/importio.js"></script>
+-->
   <!-- scripts concatenated and minified via build script -->
   <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/listcontroller.js"></script>
   <!-- end scripts -->
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
