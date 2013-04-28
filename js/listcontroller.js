@@ -21,6 +21,8 @@
 	var spinner = $("#loading");
 	var searchLoc = $("#searchloc");
 
+	var geoLoc = null;
+
 	function oppSearch() {
 		var location = "EC2A 4BX";
 		console.log("Searching for", location);
@@ -55,4 +57,39 @@
 		list.append(output);
 	}
 
+
+	// Populate the list with cached 'last location' data whilst waiting
 	$.getJSON('js/placeholder.json', showList)
+
+
+	// Check to see if this browser supports geolocation.
+	if (navigator.geolocation) {
+		// Get the location of the user's browser using the
+		// native geolocation service.
+		// only the first callback is requied. The second
+		// callback - the error handler - and the third
+		// argument - our configuration options - are optional.
+		navigator.geolocation.getCurrentPosition(
+			function(position) {
+				// Check to see if there is already a verified location.
+				// There is a bug in FireFox where this gets
+				// invoked more than once with a cahced result.
+				if (geoLoc) return;
+				 
+				// Log that this is the initial position.
+				console.log("Initial Position Found:", position.coords );
+				 
+				// Add a marker to the map using the position.
+				geoLoc = position.coords;
+//				$.getJSON()
+			},
+			function(error){
+				console.log( "geoLocation went wrong:", error );
+			},
+			{
+				timeout: (5000),
+				maximumAge: (1000 * 60 * 15),
+				enableHighAccuracy: false
+			}
+		);
+	}
