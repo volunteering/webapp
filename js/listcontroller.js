@@ -11,15 +11,17 @@
  */
 
 	// Init the client lib with auth credentials 
-	importio.init({"auth": {
+/*	importio.init({"auth": {
 		"userGuid": "0427bf4e-87a8-4fcf-be63-4934774fff6f",
 		"apiKey": ""
 	}});
-
+*/
 	var template = $('#opplisting').html();
 	var list = $("#opplist");
+	var spinner = $("#loading");
+	var searchLoc = $("#searchloc");
 
-	function go() {
+	function oppSearch() {
 		var location = "EC2A 4BX";
 		console.log("Searching for", location);
 		// Build the query object 
@@ -33,10 +35,12 @@
 
 
 		// Do the query 
-		$("#loading").show();
+		spinner.show();
 		importio.query(query).data(showList).done(function() {
-			$("#loading").hide();
+			spinner.hide();
 		});
+
+		return false;
 	}
 
 	// Helper functions to take opportunities and render them for us
