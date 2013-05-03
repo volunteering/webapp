@@ -5,7 +5,7 @@ A mockup of a "[Farmville](http://farmville.com/) in real life" idea to encourag
 
 This slowly grew over three hackathons in London:
 
-* [TechMeetups HTML5 App hackathon](http://www.meetup.com/london-silicon-roundabout/events/59072812/) July 2012 by City Uni students and friends
+* [TechMeetups HTML5 App hackathon](http://www.meetup.com/london-silicon-roundabout/events/59072812/) July 2012 by [City Uni students](http://student.city.ac.uk/~abhz530/volunteering/) and friends
 * [Urban Prototyping hackathon](http://uplondon.net/th_event/hackathon/) April 2013 at [Imperial College](http://imperialhub.org/xwiki/bin/view/Imperial+Hub/Volunteering+Opportunities/)
   * [Presentation](https://docs.google.com/presentation/d/1u3fmOotVN-4SkLnQbPnhAAPBHclD-tHWHtCn1HUEjmU/pub?start=false&loop=false&delayms=5000)
   * [2-page business case](https://docs.google.com/document/d/1QjoUJlIGHWEpaBh0ECT09W9JrpBfVXuNE-lzrTAmyAQ/pub)
