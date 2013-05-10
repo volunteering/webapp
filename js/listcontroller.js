@@ -33,7 +33,7 @@
 			},
 			"requestId": "testquery",
 			"mixGuids": ["a5ccc93f-fc44-4822-8554-50da02346fda"]
-		}
+		};
 
 
 		// Do the query 
@@ -59,7 +59,7 @@
 
 
 	// Populate the list with cached 'last location' data whilst waiting
-	$.getJSON('js/placeholder.json', showList)
+	$.getJSON('js/placeholder.json', showList);
 
 
 	// Check to see if this browser supports geolocation.
@@ -75,10 +75,8 @@
 				// There is a bug in FireFox where this gets
 				// invoked more than once with a cahced result.
 				if (geoLoc) return;
-				 
 				// Log that this is the initial position.
-				console.log("Initial Position Found:", position.coords );
-				 
+				console.log("Initial Position Found:", position.coords);
 				// Add a marker to the map using the position.
 				geoLoc = position.coords;
 //				$.getJSON()
