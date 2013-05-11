@@ -2,7 +2,7 @@
 	{
 		"image": "img/tfl.jpg",
 		"name": "Transport for London",
-		"detailurl": "event.html?e=muralMockup",
+		"detailurl": "muralMockup",
 		"title": "Paint a mural in Old St Roundabout subway",
 		"date": "May",
 		"time": "",
@@ -14,7 +14,7 @@
 	{
 		"image": "img/amanda.jpg",
 		"name": "Amanda Amandsen",
-		"detailurl": "event.html?e=muralMockup",
+		"detailurl": "muralMockup",
 		"title": "Playground cleanup",
 		"date": "Saturday",
 		"time": "12:00",
@@ -26,7 +26,7 @@
 	{
 		"image": "img/anna.jpg",
 		"name": "Anna Graham",
-		"detailurl": "event.html?e=muralMockup",
+		"detailurl": "muralMockup",
 		"title": "Breakfast for homeless",
 		"date": "Saturday 4 May",
 		"time": "09:00",
@@ -38,7 +38,7 @@
 	{
 		"image": "img/chris.jpg",
 		"name": "Henry Carter",
-		"detailurl": "event.html?e=muralMockup",
+		"detailurl": "muralMockup",
 		"title": "Clear canal rubbish",
 		"date": "Saturday 4 May",
 		"time": "14:00",
@@ -50,7 +50,7 @@
 	{
 		"image": "img/campus_london.jpg",
 		"name": "Campus London",
-		"detailurl": "event.html?e=muralMockup",
+		"detailurl": "muralMockup",
 		"title": "Learn to crete a website in Python",
 		"date": "Friday 3 May",
 		"time": "14:00",
