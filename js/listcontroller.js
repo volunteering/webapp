@@ -1,12 +1,12 @@
 /**
- * script.js manages the list of local volunteering opportunities
+ * listcontroller.js manages the list of local volunteering opportunities
  *
- * It uses jQuery, mustache.js for templating,
- * import.io APIs for federated search of multiple charities
- * and YQL for resolving geo-locations.
+ * It uses jQuery, mustache.js for templating
+ * and the facebook SDK.
  *
  * @author	Rob Finean <rfinean@iee.org>
  *
+ * @version 0.4   facebook
  * @version	0.3		mustache template and import.io federated search 
  */
 
@@ -16,11 +16,10 @@
 		"apiKey": ""
 	}});
 */
-	var template = $('#opplisting').html();
-	var list = $("#opplist");
-	var spinner = $("#loading");
-	var searchLoc = $("#searchloc");
-
+	var searchLoc = document.getElementById('searchloc');
+  var spinner = document.getElementById('loading').style;
+  var template = document.getElementById('opplisting').innerHTML;
+	var list = $('#opplist');
 	var geoLoc = null;
 
 	function oppSearch() {
@@ -37,9 +36,9 @@
 
 
 		// Do the query 
-		spinner.show();
+		spinner.display = 'inline';
 		importio.query(query).data(showList).done(function() {
-			spinner.hide();
+			spinner.display = 'none';
 		});
 
 		return false;
@@ -60,6 +59,7 @@
 
 	// Populate the list with cached 'last location' data whilst waiting
 	$.getJSON('js/placeholder.json', showList);
+  spinner.display = 'none';
 
 
 	// Check to see if this browser supports geolocation.
@@ -81,7 +81,7 @@
 				geoLoc = position.coords;
 //				$.getJSON()
 			},
-			function(error){
+			function(error) {
 				console.log( "geoLocation went wrong:", error );
 			},
 			{
