@@ -89,9 +89,12 @@
 				</ul>
 			</dl>
 
+			<div id="share" class="fb-like" data-send="true" data-width="400"></div>
 			<div id="conversation" class="fb-comments" data-width="400" data-order-by="time"></div>
 			<script>
-				document.getElementById('conversation').setAttribute('data-href', window.location.href);
+				var url = window.location.href;
+				document.getElementById('share').setAttribute('data-href', url);
+				document.getElementById('conversation').setAttribute('data-href', url);
 			</script>
 	  </div>
 
