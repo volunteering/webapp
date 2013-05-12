@@ -9,6 +9,8 @@ header h1 {padding-top:5px}
 footer {text-align:center; background:#EDEFF3; color:#000;}
 footer h3 {background-color:#93c162; border:1px solid #47970e; padding:5px; padding-bottom:0; font-size:1.2em; display:inline-block; margin-top:20px;}
 
+.composer {background-color:rgba(190, 190, 190, .2); border:1px solid #e9e9e9;}
+
 ul.opportunities {list-style:none; margin:0; padding:0;}
 ul.opportunities li {padding:10px 0; margin:0; border-bottom:1px solid #EDEFF3; }
 ul.opportunities li a {color:#576B95; text-decoration:none;}
